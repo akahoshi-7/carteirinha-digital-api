@@ -1,0 +1,37 @@
+@baseUrl = http://localhost:8080
+
+### Login válido — mesmo contrato do aplicativo Android
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "login": "aluno",
+  "senha": "123"
+}
+
+### Segundo aluno
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "login": "maria",
+  "senha": "456"
+}
+
+### Senha incorreta — deve responder 401 e campo message
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "login": "aluno",
+  "senha": "senha-errada"
+}
+
+### Campos vazios — deve responder 400
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "login": "",
+  "senha": ""
+}
