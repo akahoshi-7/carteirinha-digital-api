@@ -75,7 +75,7 @@ class AuthControllerIntegrationTest {
             .andExpect(
                 jsonPath("$.turma")
                     .value(
-                        "2DEVEST-A"
+                        "2DEVEST-B"
                     )
             )
             .andExpect(

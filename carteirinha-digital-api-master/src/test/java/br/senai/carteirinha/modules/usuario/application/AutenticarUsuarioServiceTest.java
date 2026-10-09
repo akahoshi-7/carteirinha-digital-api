@@ -67,7 +67,7 @@ class AutenticarUsuarioServiceTest {
         );
 
         assertEquals(
-            "2DEVEST-A",
+            "2DEVEST-B",
             resultado.turma()
         );
 
@@ -137,10 +137,10 @@ class AutenticarUsuarioServiceTest {
                 ID,
                 "aluno",
                 "hash-da-senha",
-                "Rafael Costa",
+                "mary",
                 "2026000001",
                 "Desenvolvimento de Sistemas",
-                "2DEVEST-A",
+                "2DEVEST-B",
                 false
             );
 
@@ -172,10 +172,10 @@ class AutenticarUsuarioServiceTest {
             ID,
             "aluno",
             "hash-da-senha",
-            "Rafael Costa",
+            "mary",
             "2026000001",
             "Desenvolvimento de Sistemas",
-            "2DEVEST-A",
+            "2DEVEST-B",
             true
         );
     }

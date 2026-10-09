@@ -43,7 +43,7 @@ public class UsuarioDataInitializer {
                     ),
                     "maria",
                     passwordEncoder.encode("456"),
-                    "Maria Oliveira",
+                    "Mary clear",
                     "2026000002",
                     "Desenvolvimento de Sistemas",
                     "2DEVEST-B",

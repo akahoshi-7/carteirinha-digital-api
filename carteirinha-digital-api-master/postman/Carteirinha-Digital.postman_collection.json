@@ -1,76 +1,8 @@
 {
   "info": {
-    "_postman_id": "c5255559-3186-4b96-b5bb-79c8977a2026",
-    "name": "Carteirinha Digital - Autenticação",
-    "description": "Testes da etapa atual de autenticação, sem refresh token.",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-  },
-  "variable": [
-    { "key": "baseUrl", "value": "http://localhost:8080" },
-    { "key": "token", "value": "" }
-  ],
-  "item": [
-    {
-      "name": "Login válido",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "exec": [
-              "pm.test('Status 200', () => pm.response.to.have.status(200));",
-              "const body = pm.response.json();",
-              "pm.collectionVariables.set('token', body.token);",
-              "pm.test('Contrato do Android', () => {",
-              "  pm.expect(body).to.have.keys('id', 'nome', 'curso', 'turma', 'token');",
-              "  pm.expect(body).not.to.have.property('refreshToken');",
-              "});"
-            ]
-          }
-        }
-      ],
-      "request": {
-        "method": "POST",
-        "header": [{ "key": "Content-Type", "value": "application/json" }],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"login\": \"aluno\",\n  \"senha\": \"123\"\n}"
-        },
-        "url": {
+
           "raw": "{{baseUrl}}/auth/login",
-          "host": ["{{baseUrl}}"],
-          "path": ["auth", "login"]
-        }
-      }
-    },
-    {
-      "name": "Credenciais inválidas",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "exec": [
-              "pm.test('Status 401', () => pm.response.to.have.status(401));",
-              "pm.test('Erro contém message', () => pm.expect(pm.response.json().message).to.eql('Login ou senha inválidos'));"
-            ]
-          }
-        }
-      ],
-      "request": {
-        "method": "POST",
-        "header": [{ "key": "Content-Type", "value": "application/json" }],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"login\": \"aluno\",\n  \"senha\": \"errada\"\n}"
-        },
-        "url": {
-          "raw": "{{baseUrl}}/auth/login",
-          "host": ["{{baseUrl}}"],
-          "path": ["auth", "login"]
-        }
-      }
-    },
-    {
-      "name": "Campos vazios",
+
       "request": {
         "method": "POST",
         "header": [{ "key": "Content-Type", "value": "application/json" }],

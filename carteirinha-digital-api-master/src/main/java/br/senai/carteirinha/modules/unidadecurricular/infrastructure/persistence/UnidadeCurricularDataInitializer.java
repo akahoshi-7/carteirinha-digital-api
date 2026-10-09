@@ -37,8 +37,8 @@ public class UnidadeCurricularDataInitializer {
                             "10000000-0000-0000-0000-000000000001"
                         ),
                         ALUNO_ID,
-                        "Banco de Dados",
-                        "Prof. Carlos Silva",
+                        "Farmar aura",
+                        "Prof. 67",
                         8.5,
                         9.0,
                         1
@@ -48,8 +48,8 @@ public class UnidadeCurricularDataInitializer {
                             "10000000-0000-0000-0000-000000000002"
                         ),
                         ALUNO_ID,
-                        "Programação para Dispositivos Móveis",
-                        "Prof. Ana Souza",
+                        "caçar pokemon",
+                        "Prof. mavi",
                         9.0,
                         8.0,
                         2
@@ -59,8 +59,8 @@ public class UnidadeCurricularDataInitializer {
                             "10000000-0000-0000-0000-000000000003"
                         ),
                         ALUNO_ID,
-                        "Desenvolvimento de Sistemas",
-                        "Prof. Marcos Lima",
+                        "defesa contra as artes das trevas",
+                        "Prof. brendo Gays",
                         7.5,
                         8.5,
                         0
@@ -70,8 +70,8 @@ public class UnidadeCurricularDataInitializer {
                             "10000000-0000-0000-0000-000000000004"
                         ),
                         ALUNO_ID,
-                        "Testes de Software",
-                        "Prof. Juliana Alves",
+                        "Olha ai o",
+                        "Prof. Petisco de mendigo",
                         8.0,
                         9.5,
                         1
@@ -81,8 +81,8 @@ public class UnidadeCurricularDataInitializer {
                             "20000000-0000-0000-0000-000000000001"
                         ),
                         MARIA_ID,
-                        "Banco de Dados",
-                        "Prof. Carlos Silva",
+                        "como fazer uma caneta azul",
+                        "Prof. manuel gomes",
                         9.0,
                         9.0,
                         0
@@ -92,8 +92,8 @@ public class UnidadeCurricularDataInitializer {
                             "20000000-0000-0000-0000-000000000002"
                         ),
                         MARIA_ID,
-                        "Programação para Dispositivos Móveis",
-                        "Prof. Ana Souza",
+                        "mover coisa",
+                        "Prof. movedor de coisa",
                         8.0,
                         8.5,
                         1
